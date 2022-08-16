@@ -1,0 +1,694 @@
+﻿@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400&family=Lexend+Tera:wght@167&family=My+Soul&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+#sub {
+    width: 1260px;
+    height: 695px;
+    margin: 0 auto;
+}
+
+
+#submenu {
+    width: 100%;
+    height: 60px;
+}
+
+    #submenu > ul {
+        font-size: 15px;
+        margin: 9px 0 0 41px;
+    }
+
+        #submenu > ul > li {
+            float: left;
+            color: #333;
+            padding: 26px 15px 0 0px;
+        }
+
+            #submenu > ul > li > a {
+                color: #333;
+            }
+
+
+#salepage {
+    width: 100%;
+    height: 670px;
+    position: relative;
+}
+
+    #salepage h3 {
+        font-size: 25px;
+    }
+
+/*왼쪽박스-이미지*/
+
+#productimg {
+    width: 500px;
+    height: 580px;
+    position: absolute;
+    top: 14px;
+    left: 56px;
+    text-align: center;
+}
+
+    #productimg .w1 {
+        width: 455px;
+        height: 390px;
+    }
+
+    #productimg p {
+        font-size: 17px;
+        font-family: 'Gothic A1', sans-serif;
+        margin: 10px 0 8px 0px;
+        font-weight: 700;
+    }
+
+    /*왼쪽박스 하단 디테일 이미지들*/
+    #productimg > #smalling {
+        width: 500px;
+        height: 150px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+        #productimg > #smalling > ul {
+            margin: 0 20px;
+        }
+
+            #productimg > #smalling > ul > li {
+                float: left;
+                padding: 0 0 10px 0px;
+            }
+
+                #productimg > #smalling > ul > li > img {
+                    width: 145px;
+                    height: 145px;
+                    opacity: 1;
+                }
+
+                    #productimg > #smalling > ul > li > img:hover {
+                        cursor: pointer;
+                        opacity: 0.6;
+                    }
+
+
+#smalling > ul > li:first-child {
+    margin: 0 0 0 4px;
+}
+
+#smalling > ul > li:nth-child(2) {
+    margin: 0 0 0 8px;
+}
+
+#smalling > ul > li:last-child {
+    margin: 0 0 0 8px;
+}
+
+/*오른쪽박스-상품정보와 옵션*/
+
+#text {
+    width: 453px;
+    height: 580px;
+    position: absolute;
+    top: 14px;
+    right: 62px;
+}
+
+    #text h4 {
+        font-size: 15px;
+    }
+
+    #text h3 {
+        font-size: 25px;
+        padding: 8px 0px 20px 0px;
+    }
+
+    #text p {
+        border-top: 4px solid #eee;
+        padding: 10px 0 0 0px;
+        font-weight: 600;
+    }
+
+    #text #price {
+        width: 450px;
+        height: 70px;
+    }
+
+        #text #price h1 {
+            font-size: 28px;
+            display: inline-block;
+            float: left;
+        }
+
+            #text #price h1:before {
+                content: "40%";
+                color: orangered;
+                padding: 0 15px 0 0px;
+            }
+
+        #text #price .coupon {
+            height: 24px;
+            width: 70px;
+            font-size: 11px;
+            float: none;
+            margin: 25px 0 0 10px;
+            border: none;
+            border-radius: 3px;
+            background-color: blanchedalmond;
+            color: #333;
+        }
+
+            #text #price .coupon:hover {
+                background-color: orangered;
+                color: #eee;
+            }
+
+/*첫번째 테이블*/
+
+.table1 {
+    width: 100%;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+    .table1 td:first-child {
+        width: 120px;
+    }
+
+    .table1 td {
+        padding: 13px;
+    }
+
+/*두번째 테이블 수량 컬러 선택옵션*/
+
+.table2 {
+    width: 100%;
+    border-bottom: 1px solid #eee;
+}
+
+    .table2 td:first-child {
+        width: 120px;
+    }
+
+    .table2 td {
+        padding: 14px;
+    }
+
+/*버튼*/
+
+.bt1 {
+    margin: 8px 0px;
+    border: none;
+    background-color: orangered;
+    color: #fff;
+    width: 130px;
+    height: 45px;
+    margin: 29px 0 0 12px;
+    opacity: 1;
+}
+
+.bt2 {
+    margin: 8px 0px;
+    border: none;
+    background-color: beige;
+    color: #555;
+    width: 130px;
+    height: 45px;
+    margin: 29px 0 0 1px;
+    opacity: 1;
+}
+
+.bt3 {
+    margin: 8px 0px;
+    border: none;
+    background-color: burlywood;
+    color: #fff;
+    width: 145px;
+    height: 45px;
+    margin: 29px 0 0 1px;
+    opacity: 1;
+}
+
+.bt1:hover {
+    opacity: 0.6;
+}
+
+.bt2:hover {
+    opacity: 0.6;
+}
+
+.bt3:hover {
+    opacity: 0.6;
+}
+
+/*다른 상품들*/
+
+#other {
+    width: 1100px;
+    height: 350px;
+    margin: 0 auto;
+    text-align: center;
+    border: 4px solid wheat;
+}
+
+    #other h2 {
+        padding: 18px 0 0 0px;
+        font-weight: 600;
+    }
+
+    #other > p {
+        font-size: 15px;
+        margin: 12px 0px 20px 0px;
+        color: #444;
+        font-weight: 600;
+    }
+
+.other1 {
+    width: 195px;
+    height: 220px;
+    display: inline-block;
+}
+
+    .other1 > p {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .other1 a img {
+        width: 195px;
+        height: 195px;
+        opacity: 1;
+    }
+
+        .other1 a img:hover {
+            opacity: 0.6;
+        }
+
+/*본문 시작 전*/
+
+#midmenu {
+    width: 1100px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+    #midmenu ul {
+        width: 1100px;
+        height: 50px;
+    }
+
+        #midmenu ul li {
+            float: left;
+            width: 275px;
+            height: 100%;
+            background-color: #eee;
+            text-align: center;
+            padding: 14px 0 0 0px;
+            font-weight: 600;
+            border-bottom: 1px solid #555;
+        }
+
+            #midmenu ul li a {
+                color: #000;
+            }
+
+    #midmenu > ul > li:first-child {
+        background-color: #fff;
+        border: 1px solid #000;
+        border-bottom: none;
+        font-weight: 900;
+    }
+
+    #midmenu > ul > li:nth-child(2) {
+        border-right: 1px solid rgb(199, 196, 196);
+    }
+
+    #midmenu > ul > li:nth-child(3) {
+        border-right: 1px solid rgb(199, 196, 196);
+    }
+
+/*섹션 상품 상세 설명*/
+
+.section1 {
+    width: 1100px;
+    height: 3400px;
+    margin: 0 auto;
+}
+
+    .section1 h1 {
+        width: 560px; padding: 5px 0px;
+    }
+
+
+.wrap {
+    width: 1100px;
+    height: 3300px;
+    margin: 120px auto 0px;
+}
+
+    .wrap .textbox {
+        text-align: center;
+        width: 1000px;
+        margin: 0 auto 10px;
+    }
+
+        .wrap .textbox h2 {
+            font-size: 33px;
+            font-weight: 700;
+        }
+
+        .wrap .textbox h4 {
+            padding: 10px 0 50px 0px;
+        }
+
+    .wrap > h4 {
+        font-size: 15px;
+    }
+
+    .wrap > h2 {
+        padding: 10px 0px 14px 0px;
+        margin: 0 auto;
+        font-size: 32px;
+        width: 1000px;
+        font-weight: 700;
+    }
+
+    .wrap .main3 {
+        display: inline-block;
+        width: 400px;
+    }
+
+    .wrap .main7 {
+        display: inline-block;
+        width: 400px;
+    }
+
+    .wrap .main4 {
+        display: inline-block;
+        width: 400px;
+    }
+
+    .wrap .main5 {
+        display: inline-block;
+        width: 400px;
+    }
+
+/*노티스*/
+
+.section2 {
+    width: 1100px;
+    height: 650px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+    .section2 ul {
+        margin: 45px 0px;
+        font-size: 15px;
+        color: #444;
+    }
+
+        .section2 ul li {
+            padding: 6px 0px;
+        }
+
+
+/*리뷰*/
+
+.review {
+    width: 1100px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+    .review ul {
+        width: 1100px;
+        height: 50px;
+    }
+
+        .review ul li {
+            float: left;
+            width: 275px;
+            height: 100%;
+            background-color: #eee;
+            text-align: center;
+            padding: 14px 0 0 0px;
+            font-weight: 600;
+            border-bottom: 1px solid #555;
+        }
+
+            .review ul li a {
+                color: #000;
+            }
+
+    .review > ul > li:nth-child(2) {
+        background-color: #fff;
+        border: 1px solid #000;
+        border-bottom: none;
+        font-weight: 900;
+    }
+
+    .review > ul > li:nth-child(3) {
+        border-right: 1px solid rgb(199, 196, 196);
+    }
+
+
+.review_table {
+    width: 1100px;
+    height: 330px;
+    margin: 0 auto;
+}
+
+    .review_table > .sb {
+        width: 1100px;
+        height: 50px;
+        margin: 0 auto;
+    }
+
+        .review_table > .sb > button {
+            float: right;
+            margin: 8px 22px 0 0px;
+            border: none;
+            background-color: burlywood;
+            padding: 7px;
+            border-radius: 4px;
+            color: #fff;
+            font-size: 15px;
+        }
+
+            .review_table > .sb > button:hover {
+                background-color: orangered;
+                color: #eee;
+            }
+
+        .review_table > .sb > select {
+            float: right;
+            margin: 12px 22px 0 0px;
+        }
+
+    /*리뷰 테이블 본문*/
+
+    .review_table .table3 {
+        margin: 0 auto;
+        border-top: 1px solid rgb(216, 210, 210);
+        line-height: 55px;
+        width: 1100px;
+        font-size: 13px;
+        color: #333;
+    }
+
+        .review_table .table3 th {
+            width: 150px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .review_table .table3 td:first-of-type {
+            width: 680px;
+            border-bottom: 1px solid #eee;
+        }
+
+            .review_table .table3 td:first-of-type > a {
+                color: #333;
+            }
+
+        .review_table .table3 td:nth-of-type(2) {
+            width: 100px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .review_table .table3 td:last-of-type {
+            width: 100px;
+            border-bottom: 1px solid #eee;
+        }
+
+/*배송 교환 반품문의*/
+
+.delivery {
+    width: 1100px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+    .delivery ul {
+        width: 1100px;
+        height: 50px;
+    }
+
+        .delivery ul li {
+            float: left;
+            width: 275px;
+            height: 100%;
+            background-color: #eee;
+            text-align: center;
+            padding: 14px 0 0 0px;
+            font-weight: 600;
+            border-bottom: 1px solid #555;
+        }
+
+            .delivery ul li a {
+                color: #000;
+            }
+
+    .delivery > ul > li:nth-child(2) {
+        background-color: #eee;
+        font-weight: 900;
+        border-left: 1px solid rgb(199, 196, 196);
+    }
+
+    .delivery > ul > li:nth-child(3) {
+        background-color: #fff;
+        border: 1px solid #000;
+        border-bottom: none;
+        font-weight: 900;
+    }
+
+.delivery_text {
+    width: 1100px;
+    height: 340px;
+    margin: 0 auto;
+}
+
+    .delivery_text ul {
+        font-size: 14px;
+        color: #555;
+        padding: 20px 0px;
+    }
+
+        .delivery_text ul li {
+            padding: 5px;
+        }
+
+/*큐엔에이*/
+
+.qa_menu {
+    width: 1100px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+    .qa_menu ul {
+        width: 1100px;
+        height: 50px;
+    }
+
+        .qa_menu ul li {
+            float: left;
+            width: 275px;
+            height: 100%;
+            background-color: #eee;
+            text-align: center;
+            padding: 14px 0 0 0px;
+            font-weight: 600;
+            border-bottom: 1px solid #555;
+        }
+
+            .qa_menu ul li a {
+                color: #000;
+            }
+
+    .qa_menu > ul > li:nth-child(4) {
+        background-color: #fff;
+        border: 1px solid #000;
+        border-bottom: none;
+        font-weight: 900;
+    }
+
+    .qa_menu > ul > li:nth-child(2) {
+        border-left: 1px solid rgb(199, 196, 196);
+    }
+
+    .qa_menu > ul > li:nth-child(3) {
+        border-left: 1px solid rgb(199, 196, 196);
+    }
+
+.qa_table > .qa {
+    width: 1100px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+    .qa_table > .qa > button {
+        float: right;
+        margin: 8px 22px 0 0px;
+        border: none;
+        background-color: burlywood;
+        padding: 7px;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 15px;
+    }
+
+        .qa_table > .qa > button:hover {
+            background-color: orangered;
+            color: #eee;
+        }
+
+/*큐엔에이 테이블*/
+
+.qa_table .table4 {
+    margin: 0 auto;
+    border-top: 1px solid rgb(216, 210, 210);
+    line-height: 55px;
+    width: 1100px;
+    font-size: 13px;
+    color: #333;
+}
+
+    .qa_table .table4 th {
+        width: 150px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .qa_table .table4 td:first-of-type {
+        width: 500px;
+        border-bottom: 1px solid #eee;
+    }
+
+        .qa_table .table4 td:first-of-type > a {
+            color: #333;
+        }
+
+    .qa_table .table4 td:nth-of-type(2) {
+        width: 100px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .qa_table .table4 td:nth-of-type(3) {
+        width: 100px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .qa_table .table4 td:last-of-type {
+        width: 100px;
+        border-bottom: 1px solid #eee;
+    }

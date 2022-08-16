@@ -1,0 +1,314 @@
+﻿@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+ul, li, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400&family=Lexend+Tera:wght@167&family=My+Soul&display=swap');
+
+
+/*헤더*/
+
+
+#header_wrap {
+    border-bottom: 1px solid #eee;
+}
+
+
+header {
+    width: 1270px;
+    height: 80px;
+    margin: 0 auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+#nav_wrap {
+  display:flex;
+  justify-content:space-between;
+  width:760px;
+}
+
+#logo {
+    width: 189px;
+    height: 60px;
+}
+
+    #logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*오른쪽 서치 아이콘*/
+
+#login {
+    width: 430px;
+    height: 60px;
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+#login > .search_box {
+    width:62%; 
+    height:33px;
+    display:flex; 
+    justify-content:center;
+    border-radius:20px;
+    border: 1px solid #666;
+    overflow: hidden;
+    }
+
+.search_icon {
+    width: 23%;
+    height: 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.icon1 {
+    width: 19%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon1 > img {
+    width:50%;
+    height:70%;
+    cursor: pointer;
+}
+
+
+.search {
+    width: 81%;
+    height: 90%;
+    border: none;
+    font-size: 13px;
+}
+
+/*아이콘 두개*/
+
+
+#login > .icon {
+    width: 45px;
+    height: 50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+    #login > .icon > a > img {
+     width:54%; 
+     height:60%;
+    }
+
+
+    /*베스트 타임특가 핫딜 리퍼세일*/
+
+.nav1 {
+    width: 470px;
+    height: 60px;
+}
+
+    .nav1 > ul {
+        text-align:center;
+        font-size: 18px;
+        
+    }
+
+    .nav1 li {
+     height:60px;
+     line-height:60px;
+     float:left;
+    }
+
+        .nav1 > ul > li > a {
+            float: left;
+            color: #333;
+            padding: 0px 18px;
+            font-weight: 600;
+        }
+
+            .nav1 > ul > li > a:hover {
+                color: orangered;
+            }
+            /*침실 매트리스 거실..*/
+
+.nav2 {
+    width: 1270px;
+    height: 47px;
+    margin: 0 auto;
+}
+
+    .nav2 > ul {     font-size: 15px;
+        text-align: left;
+        
+    }
+
+        .nav2 > ul > li {
+            float: left;
+            width: 112px;
+            height: 47px;
+            line-height: 47px;
+        }
+
+
+            .nav2 > ul > li > a {
+                color: #333;
+                font-weight:600;
+            }
+
+                .nav2 > ul > li > a:hover {
+                    color: orangered;
+                }
+                
+/*서브네비게이션*/
+
+.sub {
+    
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px ghostwhite;
+    font-size: 13px;
+    font-weight:700;
+    text-align: left;
+    background-color:#fff;
+    border-top:none;
+    display:none;
+    position:absolute;
+    z-index:50;
+    
+}
+
+    .sub > li {
+    width:112px;
+    }
+
+    .sub > li:hover {
+        background-color: lightgoldenrodyellow;
+    
+    }
+
+    .sub > li > a {
+        margin: 0 0 0 10px;
+        padding: 0 5px;
+        color:#666;
+    }
+
+    /*푸터 1번째-고객센터 입금계좌 등..*/
+
+.footer_before {
+  width:100%;
+  height:350px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  margin: 35px 0 0 0px;
+  border-top: 1px solid #ddd;
+}
+
+.footer_before_box1 {
+ width:83%;
+ height:280px;
+ display:flex;
+ justify-content:space-around;
+}
+
+    .footer_before_box1 > ul {
+     width:16%;
+     font-size:13px;
+     text-align:center;
+    }
+
+    /*고객센터 전화번호- 폰트타입만 다르게*/
+
+.phone_number {
+  font-size:22px;
+  font-weight:bold;
+}
+
+/*li첫번째들만 크게*/
+.footer_before_box1 li:first-child {
+    font-size: 16px;
+    margin:20px 0 20px 0px;
+}
+
+.footer_before_box1 button {
+   padding:3px 18px;
+   border:1px solid #eee;
+}
+
+    .footer_before_box1 li {
+        margin: 15px 0 0 0px;
+        color: #666;
+    }
+
+.footer_before_box1 a {
+  color:#666;
+}
+
+
+
+
+/*하단*/
+footer {
+    width: 100%;
+    height: 180px;
+    background-color: #eee;
+    border-top: #333;
+}
+
+    footer .box {
+        width: 1020px;
+        height: 160px;
+        margin: 0 auto;
+    }
+
+        footer .box ul {
+            font-size: 12px;
+            color: #555;
+            width: 990px;
+            height: 33px;
+            padding: 30px 0 0 30px;
+        }
+
+            footer .box ul li {
+                float: left;
+                margin: 0 0 0 10px;
+            }
+
+        footer .box p {
+            font-size: 11px;
+            width: 990px;
+            height: 70px;
+            padding: 30px 0 0 10px;
+            float: left;
+            color: #333
+        }
+
+    footer > p {
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        padding: 10px 0px;
+        margin: 0 auto;
+        color: #fff;
+        background-color: #333;
+    }
